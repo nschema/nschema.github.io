@@ -16,22 +16,22 @@
   <meta name="author" content="yschema">
   <meta name="keywords" content="渗透测试,漏洞挖掘,打工人">
   
-    <meta name="description" content="我的世界我的第一篇文章">
+    <meta name="description" content="JWT是什么  JWT全称JSON Web Token，通过数字签名的方式，以JSON对象为载体，在不同的服务终端之间安全的传输信息，说白了把信息进行安全封装，以json格式进行传递  JWT的作用  用于对应用程序上的用户进行身份验证标记，对用户的访问和操作进行权限的校验  JWT组成  jwt主要由三部分组成，使用.拼接 1eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVC">
 <meta property="og:type" content="article">
-<meta property="og:title" content="yschema">
-<meta property="og:url" content="https://nschema.github.io/2023/01/07/hello-world/index.html">
+<meta property="og:title" content="JWT安全">
+<meta property="og:url" content="https://nschema.github.io/2023/01/14/JWT%E5%AE%89%E5%85%A8/index.html">
 <meta property="og:site_name" content="yschema">
-<meta property="og:description" content="我的世界我的第一篇文章">
+<meta property="og:description" content="JWT是什么  JWT全称JSON Web Token，通过数字签名的方式，以JSON对象为载体，在不同的服务终端之间安全的传输信息，说白了把信息进行安全封装，以json格式进行传递  JWT的作用  用于对应用程序上的用户进行身份验证标记，对用户的访问和操作进行权限的校验  JWT组成  jwt主要由三部分组成，使用.拼接 1eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVC">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-07T12:52:03.541Z">
-<meta property="article:modified_time" content="2023-01-08T07:05:21.813Z">
+<meta property="article:published_time" content="2023-01-14T07:13:59.000Z">
+<meta property="article:modified_time" content="2023-01-14T07:43:04.696Z">
 <meta property="article:author" content="yschema">
-<meta property="article:tag" content="渗透测试,漏洞挖掘,打工人">
+<meta property="article:tag" content="权限漏洞">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>yschema</title>
+  <title>JWT安全 - yschema</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="JWT安全"></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-07 20:52" pubdate>
-          2023年1月7日 晚上
+        <time datetime="2023-01-14 15:13" pubdate>
+          2023年1月14日 下午
         </time>
       </span>
     
@@ -253,36 +253,47 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">JWT安全</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="我的世界"><a href="#我的世界" class="headerlink" title="我的世界"></a>我的世界</h1><p>我的第一篇文章</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+                <blockquote>
+<p>JWT是什么</p>
+</blockquote>
+<p>JWT全称JSON Web Token，通过数字签名的方式，以JSON对象为载体，在不同的服务终端之间安全的传输信息，说白了把信息进行安全封装，以json格式进行传递</p>
+<blockquote>
+<p>JWT的作用</p>
+</blockquote>
+<p>用于对应用程序上的用户进行身份验证标记，对用户的访问和操作进行权限的校验</p>
+<blockquote>
+<p>JWT组成</p>
+</blockquote>
+<p>jwt主要由三部分组成，使用.拼接</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">eyJhbGciOiJIUzI<span class="hljs-number">1</span><span class="hljs-symbol">NiIsInR5</span>cCI<span class="hljs-number">6</span>IkpX<span class="hljs-attr">VCJ9</span>.eyJzdWIiOiIxMj<span class="hljs-name">M0</span><span class="hljs-symbol">NTY3</span>ODkwIiwibmFtZSI<span class="hljs-number">6</span>Ikpva<span class="hljs-name">G4</span>gR<span class="hljs-name">G9</span>lIiwiaWF<span class="hljs-number">0</span>Ijox<span class="hljs-symbol">NTE2</span>Mj<span class="hljs-name">M5</span>MDIyfQ.SflKxwRJSMeKKF<span class="hljs-number">2</span>QT<span class="hljs-number">4</span>fwpMeJf<span class="hljs-number">36</span>POk<span class="hljs-number">6</span>yJV_adQssw<span class="hljs-number">5</span>c<br></code></pre></td></tr></table></figure>
+
+<p><strong>头部(header)</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;alg&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;HS256&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">//签名算法</span><br>  <span class="hljs-attr">&quot;typ&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;JWT&quot;</span>    <span class="hljs-comment">//格式</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>载荷(payload)</strong></p>
+<p>一般记录角色的权限信息</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;sub&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1234567890&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John Doe&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;iat&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1516239022</span> <span class="hljs-comment">//创建时间</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>签名(VERIFY SIGNATURE)</strong></p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs lisp">HMACSHA256(<br>  <span class="hljs-name">base64UrlEncode</span>(<span class="hljs-name">header</span>) + <span class="hljs-string">&quot;.&quot;</span> +<br>  base64UrlEncode(<span class="hljs-name">payload</span>),<br>  key<br>)<br></code></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>潜在的安全问题</p>
+</blockquote>
+<ul>
+<li>签名未校验</li>
+<li>算法被篡改</li>
+<li>敏感信息泄露</li>
+<li>加密算法不安全</li>
+<li>伪造密钥(CVE-2018-0114)</li>
+</ul>
 
                 
               </div>
@@ -292,6 +303,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%9D%83%E9%99%90%E6%BC%8F%E6%B4%9E/">#权限漏洞</a>
+      
+    </div>
+  
 </div>
 
 
@@ -300,8 +318,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://nschema.github.io/2023/01/07/hello-world/</div>
+      <div>JWT安全</div>
+      <div>https://nschema.github.io/2023/01/14/JWT安全/</div>
     </div>
     <div class="license-meta">
       
@@ -313,7 +331,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月7日</div>
+          <div>2023年1月14日</div>
         </div>
       
       
@@ -344,12 +362,6 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
-                    
-                      <a href="/2023/01/08/test/" title="test">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">test</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
                     
                   </article>
                   <article class="post-next col-6">

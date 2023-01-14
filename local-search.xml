@@ -4,26 +4,19 @@
   
   
   <entry>
-    <title>test</title>
-    <link href="/2023/01/08/test/"/>
-    <url>/2023/01/08/test/</url>
+    <title>JWT安全</title>
+    <link href="/2023/01/14/JWT%E5%AE%89%E5%85%A8/"/>
+    <url>/2023/01/14/JWT%E5%AE%89%E5%85%A8/</url>
     
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2023/01/07/hello-world/"/>
-    <url>/2023/01/07/hello-world/</url>
-    
-    <content type="html"><![CDATA[<h1 id="我的世界"><a href="#我的世界" class="headerlink" title="我的世界"></a>我的世界</h1><p>我的第一篇文章</p><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>JWT是什么</p></blockquote><p>JWT全称JSON Web Token，通过数字签名的方式，以JSON对象为载体，在不同的服务终端之间安全的传输信息，说白了把信息进行安全封装，以json格式进行传递</p><blockquote><p>JWT的作用</p></blockquote><p>用于对应用程序上的用户进行身份验证标记，对用户的访问和操作进行权限的校验</p><blockquote><p>JWT组成</p></blockquote><p>jwt主要由三部分组成，使用.拼接</p><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">eyJhbGciOiJIUzI<span class="hljs-number">1</span><span class="hljs-symbol">NiIsInR5</span>cCI<span class="hljs-number">6</span>IkpX<span class="hljs-attr">VCJ9</span>.eyJzdWIiOiIxMj<span class="hljs-name">M0</span><span class="hljs-symbol">NTY3</span>ODkwIiwibmFtZSI<span class="hljs-number">6</span>Ikpva<span class="hljs-name">G4</span>gR<span class="hljs-name">G9</span>lIiwiaWF<span class="hljs-number">0</span>Ijox<span class="hljs-symbol">NTE2</span>Mj<span class="hljs-name">M5</span>MDIyfQ.SflKxwRJSMeKKF<span class="hljs-number">2</span>QT<span class="hljs-number">4</span>fwpMeJf<span class="hljs-number">36</span>POk<span class="hljs-number">6</span>yJV_adQssw<span class="hljs-number">5</span>c<br></code></pre></td></tr></table></figure><p><strong>头部(header)</strong></p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;alg&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;HS256&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">//签名算法</span><br>  <span class="hljs-attr">&quot;typ&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;JWT&quot;</span>    <span class="hljs-comment">//格式</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure><p><strong>载荷(payload)</strong></p><p>一般记录角色的权限信息</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;sub&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1234567890&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John Doe&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;iat&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1516239022</span> <span class="hljs-comment">//创建时间</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure><p><strong>签名(VERIFY SIGNATURE)</strong></p><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs lisp">HMACSHA256(<br>  <span class="hljs-name">base64UrlEncode</span>(<span class="hljs-name">header</span>) + <span class="hljs-string">&quot;.&quot;</span> +<br>  base64UrlEncode(<span class="hljs-name">payload</span>),<br>  key<br>)<br></code></pre></td></tr></table></figure><blockquote><p>潜在的安全问题</p></blockquote><ul><li>签名未校验</li><li>算法被篡改</li><li>敏感信息泄露</li><li>加密算法不安全</li><li>伪造密钥(CVE-2018-0114)</li></ul>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>权限漏洞</tag>
+      
+    </tags>
     
   </entry>
   
